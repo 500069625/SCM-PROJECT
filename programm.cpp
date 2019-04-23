@@ -638,3 +638,17 @@ int main(){
  }
  
 
+ cout<< "\nLinear Equation in Matrix representation is: \n";
+ for (int i = 0; i< n; i++)
+ {
+ for (int j = 0; j < n; j++)
+ {
+ cout<<" "<< a[i][j]; //print the matrix values
+ }
+ //print the variable and constant values
+ cout<< " " <<static_cast<char>(var) << " = " << b[i][0]<< "\n";
+ var++;
+ }
+ 
+ return 0;
+ }
