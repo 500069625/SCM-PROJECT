@@ -69,3 +69,39 @@ void String::toupper()
 		if (islower(str[i]))
 			str[i] -= 32;
 }
+int main()
+{
+	String a = "Hello", b = " World", c;
+	
+	/*Testing Functions*/
+
+	/*Hello World*/
+	c = a + b;
+	c.show();
+        
+	/*HELLO*/
+	a.toupper();
+	a.show();
+	
+	/*hello*/
+	a.tolower();
+	a.show();
+	
+	/* World */
+	a=b;
+	a.show();
+	
+	/*5*/
+	cout << a.stringlen() << endl;
+       
+        /*6*/
+	cout << a.stringsize() << endl;
+
+        /*Hello World World*/
+	a += b;
+	a.show();
+
+
+	_getch();
+	return 0;
+}
