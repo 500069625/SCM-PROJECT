@@ -616,4 +616,25 @@ int main(){
 
 	return 0;
 }
+ #include <iostream>
+ using namespace std;
+
+ int main()
+ {
+ cout<< "Enter the number of variables in the equations: ";
+ int n;
+ 
+ cin>> n;
+ char var = 'x';
+ int a[n][n],b[n][1];
+ 
+ for (int i = 0; i< n; i++)
+ {
+ for (int j = 0; j < n; j++)
+ {
+ cin>> a[i][j]; //Get the Matrix values
+ }
+ cin>> b[i][0]; //Get the constant values
+ }
+ 
 
